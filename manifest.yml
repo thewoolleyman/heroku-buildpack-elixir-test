@@ -1,0 +1,9 @@
+---
+applications:
+- name: heroku-buildpack-elixir
+  memory: 1024M
+  instances: 1
+  host: heroku-buildpack-elixir
+  domain: cfapps.io
+  buildpack: https://github.com/HashNuke/heroku-buildpack-elixir.git
+  command: mix run --no-halt
